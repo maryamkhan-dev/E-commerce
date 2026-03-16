@@ -1,0 +1,35 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.vspscc
+*.vssscc
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+TestResults/
+*.trx
+
+# Publish output
+publish/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# User-specific settings
+*.cache
+*.log
