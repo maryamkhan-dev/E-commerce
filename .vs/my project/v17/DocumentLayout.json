@@ -1,0 +1,633 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SPARTA\\source\\repos\\my project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|c:\\users\\sparta\\source\\repos\\my project\\my project\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|c:\\users\\sparta\\source\\repos\\my project\\my project\\eachbookinshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachbookinshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customermanageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customermanageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookinshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachbookinshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachiteminorderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachiteminorderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|c:\\users\\sparta\\source\\repos\\my project\\my project\\shop1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\shop1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\adddiscountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\adddiscountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\adddiscountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\adddiscountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\sqlfunctions.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\sqlfunctions.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachiteminorderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachiteminorderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\itemincheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\itemincheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachbookorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachitemincart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachitemincart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customermanageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customermanageorders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\addbookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\addbookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managecart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\managecart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\inventorymanagerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\inventorymanagerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\firstscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\firstscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachorderbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\eachorderbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerupdateprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customerupdateprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerorderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customerorderhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customerorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\chooseuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\chooseuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\checkoutscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\checkoutscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\addcouponform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\addcouponform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\my_project\\viewbookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\my_project\\viewbookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\my_project\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\my_project\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\creationtables.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\creationtables.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managerupdateprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\managerupdateprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managerupdateprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\managerupdateprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\managerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C2D9E8-CCD0-4258-AA88-A147264739CD}|my project\\my project.csproj|solutionrelative:my project\\managerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "eachbookinshop.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookinshop.cs",
+              "RelativeDocumentMoniker": "my project\\eachbookinshop.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookinshop.cs [Design]",
+              "RelativeToolTip": "my project\\eachbookinshop.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T18:38:49.027Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataBase.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\DataBase.cs",
+              "RelativeDocumentMoniker": "my project\\DataBase.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\DataBase.cs",
+              "RelativeToolTip": "my project\\DataBase.cs",
+              "ViewState": "AQIAAHMBAAAAAAAAAAAYwIoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "my project",
+              "WhenOpened": "2024-05-05T16:39:45.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "eachbookinshop.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookinshop.cs",
+              "RelativeDocumentMoniker": "my project\\eachbookinshop.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookinshop.cs",
+              "RelativeToolTip": "my project\\eachbookinshop.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:07:29.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Shop1.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Shop1.cs",
+              "RelativeDocumentMoniker": "my project\\Shop1.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Shop1.cs",
+              "RelativeToolTip": "my project\\Shop1.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowEEAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T18:38:22.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "eachiteminorderhistory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachiteminorderhistory.cs",
+              "RelativeDocumentMoniker": "my project\\eachiteminorderhistory.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachiteminorderhistory.cs [Design]",
+              "RelativeToolTip": "my project\\eachiteminorderhistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T18:01:13.288Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "customermanageorders.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customermanageorders.cs",
+              "RelativeDocumentMoniker": "my project\\customermanageorders.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customermanageorders.cs [Design]",
+              "RelativeToolTip": "my project\\customermanageorders.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T18:01:02.793Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddDiscountForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddDiscountForm.cs",
+              "RelativeDocumentMoniker": "my project\\AddDiscountForm.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddDiscountForm.cs [Design]",
+              "RelativeToolTip": "my project\\AddDiscountForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:36:58.155Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "managecart.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managecart.cs",
+              "RelativeDocumentMoniker": "my project\\managecart.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\managecart.cs",
+              "RelativeToolTip": "my project\\managecart.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAiwN0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:11:20.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Login.cs",
+              "RelativeDocumentMoniker": "my project\\Login.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Login.cs",
+              "RelativeToolTip": "my project\\Login.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAApwD8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:11:11.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "itemincheckout.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\itemincheckout.cs",
+              "RelativeDocumentMoniker": "my project\\itemincheckout.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\itemincheckout.cs",
+              "RelativeToolTip": "my project\\itemincheckout.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:11:06.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InventoryManagerScreen.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\InventoryManagerScreen.cs",
+              "RelativeDocumentMoniker": "my project\\InventoryManagerScreen.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\InventoryManagerScreen.cs",
+              "RelativeToolTip": "my project\\InventoryManagerScreen.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:08:36.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FirstScreen.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\FirstScreen.cs",
+              "RelativeDocumentMoniker": "my project\\FirstScreen.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\FirstScreen.cs",
+              "RelativeToolTip": "my project\\FirstScreen.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:08:31.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "eachorderbook.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachorderbook.cs",
+              "RelativeDocumentMoniker": "my project\\eachorderbook.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachorderbook.cs",
+              "RelativeToolTip": "my project\\eachorderbook.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:08:19.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "eachiteminorderhistory.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachiteminorderhistory.cs",
+              "RelativeDocumentMoniker": "my project\\eachiteminorderhistory.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachiteminorderhistory.cs",
+              "RelativeToolTip": "my project\\eachiteminorderhistory.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAswG8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:08:04.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "eachitemincart.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachitemincart.cs",
+              "RelativeDocumentMoniker": "my project\\eachitemincart.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachitemincart.cs",
+              "RelativeToolTip": "my project\\eachitemincart.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwG0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:07:38.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerUpdateProfile.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerUpdateProfile.cs",
+              "RelativeDocumentMoniker": "my project\\CustomerUpdateProfile.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerUpdateProfile.cs",
+              "RelativeToolTip": "my project\\CustomerUpdateProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:06:55.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CustomerScreen.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerScreen.cs",
+              "RelativeDocumentMoniker": "my project\\CustomerScreen.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerScreen.cs",
+              "RelativeToolTip": "my project\\CustomerScreen.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:06:47.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerProfile.cs",
+              "RelativeDocumentMoniker": "my project\\CustomerProfile.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerProfile.cs",
+              "RelativeToolTip": "my project\\CustomerProfile.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:06:32.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "customerorderhistory.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerorderhistory.cs",
+              "RelativeDocumentMoniker": "my project\\customerorderhistory.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customerorderhistory.cs",
+              "RelativeToolTip": "my project\\customerorderhistory.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAYwCUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:06:17.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CustomerOrder.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerOrder.cs",
+              "RelativeDocumentMoniker": "my project\\CustomerOrder.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CustomerOrder.cs",
+              "RelativeToolTip": "my project\\CustomerOrder.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:06:12.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "customermanageorders.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customermanageorders.cs",
+              "RelativeDocumentMoniker": "my project\\customermanageorders.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\customermanageorders.cs",
+              "RelativeToolTip": "my project\\customermanageorders.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:06:02.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Customer.cs",
+              "RelativeDocumentMoniker": "my project\\Customer.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Customer.cs",
+              "RelativeToolTip": "my project\\Customer.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:05:57.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Coupon.cs",
+              "RelativeDocumentMoniker": "my project\\Coupon.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Coupon.cs",
+              "RelativeToolTip": "my project\\Coupon.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:05:53.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChooseUser.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ChooseUser.cs",
+              "RelativeDocumentMoniker": "my project\\ChooseUser.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ChooseUser.cs",
+              "RelativeToolTip": "my project\\ChooseUser.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:05:48.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CheckoutScreen.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CheckoutScreen.cs",
+              "RelativeDocumentMoniker": "my project\\CheckoutScreen.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CheckoutScreen.cs",
+              "RelativeToolTip": "my project\\CheckoutScreen.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:05:42.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Book.cs",
+              "RelativeDocumentMoniker": "my project\\Book.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\Book.cs",
+              "RelativeToolTip": "my project\\Book.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:05:03.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddCouponForm.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddCouponForm.cs",
+              "RelativeDocumentMoniker": "my project\\AddCouponForm.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddCouponForm.cs",
+              "RelativeToolTip": "my project\\AddCouponForm.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:04:51.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddBookForm.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddBookForm.cs",
+              "RelativeDocumentMoniker": "my project\\AddBookForm.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddBookForm.cs",
+              "RelativeToolTip": "my project\\AddBookForm.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwDUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:04:43.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ViewBookForm.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\my_project\\ViewBookForm.cs",
+              "RelativeDocumentMoniker": "my project\\my_project\\ViewBookForm.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\my_project\\ViewBookForm.cs",
+              "RelativeToolTip": "my project\\my_project\\ViewBookForm.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:04:39.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\my_project\\Register.cs",
+              "RelativeDocumentMoniker": "my project\\my_project\\Register.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\my_project\\Register.cs",
+              "RelativeToolTip": "my project\\my_project\\Register.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T17:04:34.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CreationTables.txt",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CreationTables.txt",
+              "RelativeDocumentMoniker": "my project\\CreationTables.txt",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\CreationTables.txt",
+              "RelativeToolTip": "my project\\CreationTables.txt",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-05T16:55:44.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SQLFunctions.txt",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\SQLFunctions.txt",
+              "RelativeDocumentMoniker": "my project\\SQLFunctions.txt",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\SQLFunctions.txt",
+              "RelativeToolTip": "my project\\SQLFunctions.txt",
+              "ViewState": "AQIAAGsAAAAAAAAAAAASwIUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-05T16:53:41.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ManagerUpdateProfile.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerUpdateProfile.cs",
+              "RelativeDocumentMoniker": "my project\\ManagerUpdateProfile.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerUpdateProfile.cs",
+              "RelativeToolTip": "my project\\ManagerUpdateProfile.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAADEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:46:06.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ManagerUpdateProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerUpdateProfile.cs",
+              "RelativeDocumentMoniker": "my project\\ManagerUpdateProfile.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerUpdateProfile.cs [Design]",
+              "RelativeToolTip": "my project\\ManagerUpdateProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:46:03.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ManagerProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerProfile.cs",
+              "RelativeDocumentMoniker": "my project\\ManagerProfile.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerProfile.cs [Design]",
+              "RelativeToolTip": "my project\\ManagerProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:45:18.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ManagerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerProfile.cs",
+              "RelativeDocumentMoniker": "my project\\ManagerProfile.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\ManagerProfile.cs",
+              "RelativeToolTip": "my project\\ManagerProfile.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAjwGsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:01:09.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddDiscountForm.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddDiscountForm.cs",
+              "RelativeDocumentMoniker": "my project\\AddDiscountForm.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\AddDiscountForm.cs",
+              "RelativeToolTip": "my project\\AddDiscountForm.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowFoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T18:48:48.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "eachbookorder.cs",
+              "DocumentMoniker": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookorder.cs",
+              "RelativeDocumentMoniker": "my project\\eachbookorder.cs",
+              "ToolTip": "C:\\Users\\SPARTA\\source\\repos\\my project\\my project\\eachbookorder.cs",
+              "RelativeToolTip": "my project\\eachbookorder.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T18:24:49.756Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

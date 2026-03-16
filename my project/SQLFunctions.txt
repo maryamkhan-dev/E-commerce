@@ -1,0 +1,447 @@
+﻿----------------------------------------------
+--			TAGS TO SEARCH QUERY TYPE		--
+
+--		2tj	:	two table join				
+--		3tj	:	three table join
+--		4tj	:	four table join
+--		 ag	:	aggregate
+--		nsq	:	nested subquery
+--	  group	:	group by
+----------------------------------------------
+
+
+
+CREATE FUNCTION UsernameExists(@username VARCHAR(50)) RETURNS BIT
+AS
+BEGIN
+    DECLARE @user_count INT;
+    SELECT @user_count = COUNT(*) FROM Users WHERE Username = @username;
+    IF @user_count > 0
+        RETURN 1;
+    ELSE
+        RETURN 0;
+    
+    -- default return statement
+    RETURN 0;
+END;
+
+-- function
+CREATE FUNCTION CheckUser(@username VARCHAR(50), @password VARCHAR(50), @type VARCHAR(50)) RETURNS BIT
+AS
+BEGIN
+    DECLARE @user_count INT;
+
+    SELECT @user_count = COUNT(*) FROM Users 
+    WHERE Username = @username AND Password = @password AND User_Type = @type;
+
+    IF @user_count > 0
+        RETURN 1;
+    ELSE
+        RETURN 0;
+
+	-- default return statement
+    RETURN 0;
+END;
+
+
+CREATE PROCEDURE AddNewCustomer
+    @customerUsername VARCHAR(50),
+    @customerFname VARCHAR(50),
+    @customerLname VARCHAR(50),
+    @customerEmail VARCHAR(100),
+    @customerPassword VARCHAR(50),
+    @customerAddress VARCHAR(255),
+    @customerPhonenumber VARCHAR(20),
+    @customerCity VARCHAR(100),
+    @customerState VARCHAR(100)
+AS
+BEGIN
+    DECLARE @customerId INT;
+
+    INSERT INTO Users (Username, First_Name, Last_Name, Password, Email, Phone_Number, User_Type)
+    VALUES (@customerUsername, @customerFname, @customerLname, @customerPassword, @customerEmail, @customerPhonenumber, 'Customer');
+
+    SET @customerId = SCOPE_IDENTITY();
+
+    INSERT INTO Customer (Username, Shipping_Address, Shipping_City, Shipping_State)
+    VALUES (@customerUsername, @customerAddress, @customerCity, @customerState);
+  
+END;
+
+
+CREATE PROCEDURE AddNewManager
+    @managerUsername VARCHAR(50),
+    @managerFname VARCHAR(50),
+    @managerLname VARCHAR(50),
+    @managerEmail VARCHAR(100),
+    @managerPassword VARCHAR(50),
+    @managerPhonenumber VARCHAR(20),
+    @managerJoiningDate DATETIME,
+    @managerType VARCHAR(50)
+AS
+BEGIN
+    INSERT INTO Users (Username, First_Name, Last_Name, Password, Email, Phone_Number, user_type)
+    VALUES (@managerUsername, @managerFname, @managerLname, @managerPassword, @managerEmail, @managerPhonenumber, @managerType);
+
+    INSERT INTO Manager (Username, Joining_Date, Manager_Type)
+    VALUES (@managerUsername, @managerJoiningDate, @managerType);
+END;
+
+
+
+CREATE PROCEDURE InsertCartItem @CustomerID VARCHAR(50), @BookISBN VARCHAR(50)
+AS
+BEGIN
+    -- Insert item into cart
+    INSERT INTO CartItems (CartID, BookISBN, Quantity)
+    VALUES ((SELECT CartID FROM Cart WHERE CustomerID = @CustomerID), @BookISBN, 1);
+END;
+
+
+-- three table joing (3tj)
+CREATE PROCEDURE GetCartItems @CustomerID VARCHAR(50)
+AS
+BEGIN
+    -- Retrieve cart items for the given customer
+    SELECT ci.CartID, ci.BookISBN, ci.Quantity, b.Title, b.Author, b.Price
+    FROM CartItems ci
+    JOIN Cart c ON ci.CartID = c.CartID
+    JOIN Books b ON ci.BookISBN = b.ISBN
+    WHERE c.CustomerID = @CustomerID;
+END;
+
+
+
+CREATE PROCEDURE GetCustomerOrders @CustomerID VARCHAR(50)
+AS
+BEGIN
+    SELECT OrderID, CustomerID, Order_Date, Status, Order_Total, Delivery_fee, couponCode
+    FROM Orders
+    WHERE CustomerID = @CustomerID
+    ORDER BY Order_Date DESC;
+END;
+
+
+-- three table join (3tj)
+CREATE PROCEDURE GetOrderItems @OrderID INT
+AS
+BEGIN
+    SELECT oi.Quantity, oi.Title, oi.Price, oi.BookISBN,
+           CASE WHEN r.OrderID IS NOT NULL THEN 'Returned' ELSE 'Delivered' END AS Status
+    FROM OrderItemsView oi
+    LEFT JOIN Returns r ON oi.OrderID = r.OrderID AND oi.BookISBN = r.BookISBN
+    WHERE oi.OrderID = @OrderID;
+END;
+
+-- two table join (2tj)
+CREATE PROCEDURE DeleteCartItem @CustomerID VARCHAR(50), @BookISBN VARCHAR(20)
+AS
+BEGIN
+    DELETE ci
+    FROM CartItems ci
+    INNER JOIN Cart c ON ci.CartID = c.CartID
+    WHERE c.CustomerID = @CustomerID AND ci.BookISBN = @BookISBN;
+END;
+
+
+
+-- two table join (2tj)
+CREATE PROCEDURE GetCustomerDetails @Username VARCHAR(50)
+AS
+BEGIN
+    SELECT u.Username, u.First_Name, u.Last_Name, u.Email, u.Phone_Number, u.Password, 
+           c.Shipping_Address, c.Shipping_City, c.Shipping_State
+    FROM Users u
+    JOIN Customer c ON u.Username = c.Username
+    WHERE u.Username = @Username;
+END;
+
+
+-- view
+-- two table join (2tj)
+CREATE VIEW OrderItemsView
+AS
+SELECT oi.OrderID, oi.BookISBN, oi.Quantity, b.Title, b.Author, b.Price
+FROM OrderItems oi
+JOIN Books b ON oi.BookISBN = b.ISBN;
+
+
+
+CREATE PROCEDURE InsertNewOrder
+    @Username VARCHAR(50),
+    @DeliveryFee DECIMAL(10, 2),
+    @CouponCode VARCHAR(50)
+AS
+BEGIN
+    DECLARE @OrderID INT;
+
+    INSERT INTO Orders (CustomerID, Order_Date, Delivery_fee, CouponCode, Status)
+    VALUES (@Username, GETDATE(), @DeliveryFee, @CouponCode, 'Pending');
+
+    SET @OrderID = SCOPE_IDENTITY();
+
+    SELECT @OrderID AS OrderID;
+END;
+
+
+
+CREATE PROCEDURE InsertOrderItems
+    @OrderID INT,
+    @BookISBN VARCHAR(20),
+    @Quantity INT
+AS
+BEGIN
+    INSERT INTO OrderItems (OrderID, BookISBN, Quantity)
+    VALUES (@OrderID, @BookISBN, @Quantity);
+END;
+
+
+-- two table join (2tj)
+CREATE TRIGGER ReduceBookQuantityOnOrderItemInsert
+ON OrderItems
+AFTER INSERT
+AS
+BEGIN
+    UPDATE Books
+    SET Quantity = Books.Quantity - i.Quantity
+    FROM Books
+    INNER JOIN inserted i ON Books.ISBN = i.BookISBN;
+END;
+
+
+-- three table join (3tj)
+CREATE TRIGGER UpdateBookQuantityOnReturn
+ON Returns
+AFTER INSERT
+AS
+BEGIN
+    UPDATE b
+    SET b.Quantity = b.Quantity + oi.Quantity
+    FROM Books b
+    JOIN OrderItems oi ON oi.BookISBN = b.ISBN
+    JOIN inserted r ON r.OrderID = oi.OrderID AND r.BookISBN = oi.BookISBN;
+END;
+
+
+-- two table join (2tj)
+CREATE PROCEDURE GetManagerDetails @Username VARCHAR(50)
+AS
+BEGIN
+    SELECT u.Username, u.First_Name, u.Last_Name, u.Email, u.Phone_Number, u.Password,
+           m.Joining_Date, m.Manager_Type
+    FROM Users u
+    JOIN Manager m ON u.Username = m.Username
+    WHERE u.Username = @Username;
+END;
+
+
+-- two table join (2tj)  used twice
+-- aggregate (ag)
+-- nested subquery (nsq)
+CREATE FUNCTION CalculateOrderTotal (@OrderID INT)
+RETURNS DECIMAL(10, 2)
+AS
+BEGIN
+    DECLARE @Total DECIMAL(10, 2);
+
+    SELECT @Total = SUM(oi.Quantity * b.Discounted_Price)
+    FROM OrderItems oi
+    INNER JOIN Books b ON oi.BookISBN = b.ISBN
+    WHERE oi.OrderID = @OrderID;
+
+    -- for coupon discount amount
+    SELECT @Total = @Total - ISNULL((
+        SELECT c.Discount_Amount
+        FROM Coupons c
+        INNER JOIN Orders o ON c.CouponCode = o.couponCode
+        WHERE o.OrderID = @OrderID
+    ), 0);
+
+    -- delivery fee
+    SELECT @Total = @Total + ISNULL((
+        SELECT Delivery_fee
+        FROM Orders
+        WHERE OrderID = @OrderID
+    ), 0);
+
+    RETURN @Total;
+END;
+
+
+-- group by (group)
+CREATE PROCEDURE GetAverageOrderValuePerCustomer
+AS
+BEGIN
+    SELECT o.CustomerID, AVG(o.Order_Total) AS AverageOrderValue
+    FROM Orders o
+    GROUP BY o.CustomerID;
+END;
+
+
+-- aggregate (ag)
+CREATE PROCEDURE GetAverageNumberOfItemsPerOrder
+AS
+BEGIN
+    SELECT AVG(Quantity) AS AverageNumberOfItems
+    FROM OrderItems;
+END;
+
+
+-- two table join (2tj)
+-- group by (group)
+CREATE PROCEDURE GetRevenueByEachCustomer
+AS
+BEGIN
+    SELECT c.Username, SUM(o.Order_Total) AS Revenue
+    FROM Orders o
+    JOIN Customer c ON o.CustomerID = c.Username
+    GROUP BY c.Username;
+END;
+
+
+-- group by (group)
+-- two table join (2tj)
+-- aggregate (ag)
+CREATE PROCEDURE GetMostBoughtBook
+AS
+BEGIN
+    WITH MaxPurchaseCount AS (
+        SELECT TOP 1 BookISBN, COUNT(*) AS PurchaseCount
+        FROM OrderItems
+        GROUP BY BookISBN
+        ORDER BY COUNT(*) DESC
+    )
+    SELECT mp.BookISBN, b.Title, mp.PurchaseCount
+    FROM MaxPurchaseCount mp
+    JOIN Books b ON mp.BookISBN = b.ISBN;
+END;
+
+
+-- aggregate (ag)
+-- two table join (2tj)
+-- group by (group)
+CREATE PROCEDURE GetRevenueByEachCustomer
+AS
+BEGIN
+    SELECT c.Username, SUM(o.Order_Total) AS Revenue
+    FROM Orders o
+    JOIN Customer c ON o.CustomerID = c.Username
+    GROUP BY c.Username;
+END;
+
+
+-- aggregate (ag)
+-- three table join (3tj)
+-- group by (group)
+CREATE PROCEDURE GetRevenueByEachBookNotReturned
+AS
+BEGIN
+    SELECT b.Title AS BookTitle, b.ISBN AS BookISBN, SUM(oi.Quantity * b.Price) AS Revenue
+    FROM OrderItems oi
+    JOIN Books b ON oi.BookISBN = b.ISBN
+    LEFT JOIN Returns r ON oi.OrderID = r.OrderID AND oi.BookISBN = r.BookISBN
+    WHERE r.OrderID IS NULL
+    GROUP BY b.Title, b.ISBN;
+END;
+
+
+-- three table join (3tj)
+CREATE PROCEDURE ClearCartItems @CustomerID VARCHAR(50)
+AS
+BEGIN
+    DELETE FROM CartItems
+	FROM CartItems
+	INNER JOIN Carts ON CartItems.cartid = Carts.id
+	INNER JOIN Customers ON Carts.customerid = Customers.id
+	WHERE Customers.username = @CustomerID;
+END;
+
+
+
+--			QUERIES IMPLEMENTED IN THE CODE IN FILE DataBase.cs
+
+UPDATE Customer 
+SET First_Name = @customerFname, Last_Name = @customerLname,
+	Email = @customerEmail, Password = @customerPassword, Shipping_Address = @customerAddress,
+	Shipping_City = @customerCity, Shipping_State = @customerState
+WHERE Username = @customerUsername;
+
+
+UPDATE Discounts
+SET Percentage = @Percentage, Type = @Type
+WHERE BookISBN = @BookISBN;
+
+
+INSERT INTO Cart (CustomerID, Creation_date) VALUES (@CustomerID, GETDATE());
+SELECT SCOPE_IDENTITY();
+
+
+UPDATE Manager
+SET First_Name = @Fname, Last_Name = @Lname,
+	Email = @Email, Password = @Password,
+	Joining_Date = @Joining_Date,
+	Manager_Type = @managertype
+WHERE Username = @Username;
+
+
+SELECT ISBN, Title, Author, Publisher, Quantity, Price, Discounted_Price, Publication_Year
+FROM Books 
+WHERE isDeleted;
+
+
+-- neseted subquery (nsq)
+UPDATE CartItems SET Quantity = @quantity
+WHERE CartID = (
+	SELECT CartID FROM Cart
+	WHERE CustomerID = @CustomerID)
+AND BookISBN = @BookISBN;
+
+
+-- three table join (33tj)
+SELECT  o.OrderID, o.Order_Date, o.Status, o.Order_Total, o.Delivery_Fee, o.CouponCode
+FROM Orders o
+INNER JOIN OrderItems oi ON o.OrderID = oi.OrderID
+INNER JOIN Returns r ON oi.OrderID = r.OrderID AND oi.BookISBN = r.BookISBN
+WHERE o.CustomerID = @Username;
+
+
+-- two table join (2tj)
+INSERT INTO Returns (OrderID, BookISBN, Refund_Amount)
+SELECT @OrderID, @ISBN, (b.Price * oi.Quantity) AS Refund_Amount
+FROM OrderItems oi
+JOIN Books b ON oi.BookISBN = b.ISBN
+WHERE oi.OrderID = @OrderID AND oi.BookISBN = @ISBN;
+
+
+-- four table join (4tj)
+SELECT o.OrderID, o.Order_Date, o.Status, o.Order_Total, o.Delivery_Fee, o.CouponCode,
+    c.Username, c.Shipping_Address, 
+    b.ISBN, b.Title, b.Author, b.Publication_Year, b.Publisher,
+    oi.Quantity, Books.Price
+FROM Orders o
+INNER JOIN Customer c ON o.CustomerID = c.Username
+INNER JOIN OrderItems oi ON o.OrderID = oi.OrderID
+INNER JOIN Books b ON oi.BookISBN = b.ISBN
+WHERE o.OrderID = @OrderId;
+
+
+-- three table join (3tj)
+SELECT  o.OrderID, o.Order_Date, o.Status, o.Order_Total, o.Delivery_Fee, o.CouponCode
+FROM Orders o
+INNER JOIN OrderItems oi ON o.OrderID = oi.OrderID
+INNER JOIN Returns r ON oi.OrderID = r.OrderID AND oi.BookISBN = r.BookISBN;
+
+
+-- group by (group)
+SELECT CustomerID, COUNT(OrderID) AS NumberOfOrders
+FROM Orders
+GROUP BY CustomerID;
+
+
+-- four table join (4tj)
+SELECT o.OrderID, o.Order_Date, c.Username, c.Shipping_Address, oi.Quantity, o.Order_Total 
+FROM Orders o 
+JOIN Customer c ON o.CustomerID = c.Username 
+JOIN OrderItems oi ON o.OrderID = oi.OrderID 
+JOIN Books b ON oi.BookISBN = b.ISBN 
+WHERE b.ISBN = @ISBN;

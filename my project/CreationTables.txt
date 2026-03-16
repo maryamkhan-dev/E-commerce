@@ -1,0 +1,101 @@
+﻿CREATE TABLE Users (
+    Username VARCHAR(50) PRIMARY KEY,
+    First_Name VARCHAR(50),
+    Last_Name VARCHAR(50),
+    Password VARCHAR(50),
+    Email VARCHAR(100),
+    Phone_Number VARCHAR(20),
+	user_type VARCHAR(50),
+	Account_status VARCHAR(50)
+);
+
+
+CREATE TABLE Customer (
+    Username VARCHAR(50) PRIMARY KEY,
+    Shipping_Address VARCHAR(255),
+    Shipping_City VARCHAR(100),
+    Shipping_State VARCHAR(100),
+    FOREIGN KEY (Username) REFERENCES Users(Username)
+);
+
+CREATE TABLE Manager (
+    Username VARCHAR(50) PRIMARY KEY,
+    Joining_Date DATE,
+    Manager_Type VARCHAR(50),
+    FOREIGN KEY (Username) REFERENCES Users(Username)
+);
+
+CREATE TABLE Books (
+    ISBN VARCHAR(20) PRIMARY KEY,
+    Title VARCHAR(255),
+    Author VARCHAR(100),
+    Publisher VARCHAR(100),
+    Quantity INT,
+    Price DECIMAL(10, 2),
+    Discounted_Price DECIMAL(10, 2),
+    Publication_Year INT,
+	isDeleted BIT DEFAULT 0
+);
+
+
+CREATE TABLE Discounts (
+    BookISBN VARCHAR(20) PRIMARY KEY,
+    Percentage DECIMAL(5, 2),
+    Type VARCHAR(50),
+    FOREIGN KEY (BookISBN) REFERENCES Books(ISBN) ON DELETE CASCADE
+);
+
+CREATE TABLE Coupons (
+    CouponCode VARCHAR(20) PRIMARY KEY,
+    Discount_Amount DECIMAL(10, 2),
+	Validity VARCHAR(20)
+);
+
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY IDENTITY,
+    CustomerID VARCHAR(50),
+    Order_Date DATE,
+    Status VARCHAR(50),
+    Order_Total DECIMAL(10, 2),
+    Delivery_Fee DECIMAL(10, 2),
+    CouponCode VARCHAR(20),
+    FOREIGN KEY (CustomerID) REFERENCES Customer(Username),
+    FOREIGN KEY (CouponCode) REFERENCES Coupons(CouponCode)
+);
+
+CREATE TABLE OrderItems (
+    OrderID INT,
+    BookISBN VARCHAR(20),
+    Quantity INT,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (BookISBN) REFERENCES Books(ISBN),
+    PRIMARY KEY (OrderID, BookISBN)
+);
+
+CREATE TABLE Cart (
+    CartID INT PRIMARY KEY IDENTITY,
+    CustomerID VARCHAR(50),
+    Creation_Date DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customer(Username)
+);
+
+CREATE TABLE CartItems (
+    CartID INT,
+    BookISBN VARCHAR(20),
+    Quantity INT,
+    FOREIGN KEY (CartID) REFERENCES Cart(CartID),
+    FOREIGN KEY (BookISBN) REFERENCES Books(ISBN),
+    PRIMARY KEY (CartID, BookISBN)
+);
+
+CREATE TABLE Returns (
+    OrderID INT,
+    BookISBN VARCHAR(20),
+    Refund_Amount DECIMAL(10, 2),
+	FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (BookISBN) REFERENCES Books(ISBN),
+    PRIMARY KEY (OrderID, BookISBN)
+);
+
+
